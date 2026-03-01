@@ -708,4 +708,14 @@ box-shadow: 0 14px 35px rgba(255,120,170,0.18);
 .to-top:hover {
   transform: translateY(-3px);
   opacity: 1;
+
+}
+/* en móvil: mostrar cuando se toca */
+.foto.activa span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.foto.activa::after {
+  opacity: 1;
 }
