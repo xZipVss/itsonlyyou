@@ -225,6 +225,20 @@ for (let i = 0; i < 28; i++) {
 }
 </script>
 <a href="#inicio" class="to-top" aria-label="Volver arriba">↑</a>
+<script>
+document.querySelectorAll(".foto").forEach(foto => {
+  foto.addEventListener("click", () => {
+    // quitar en las otras
+    document.querySelectorAll(".foto").forEach(f => {
+      if(f !== foto) f.classList.remove("activa");
+    });
+
+    // activar la tocada
+    foto.classList.toggle("activa");
+  });
+});
+</script>
 </body> 
 
 </html>
+
